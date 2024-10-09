@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="icon" href="/Assets/Image/News-removebg-preview.png" />
+    <title>News Portal</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    *,
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      background-color: #f1f1f1;
+    }
+
+    header {
+      background-color: #ffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 4em;
+    }
+
+    header ul {
+      display: flex;
+      list-style: none;
+      gap: 2em;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin-left: 2em;
+    }
+
+    .container-input {
+      background-color: #f1f1f1;
+      padding: 0.5em;
+      border-radius: 30px;
+      margin-right: 2em;
+    }
+
+    input {
+      border: none;
+      background-color: #f1f1f1;
+    }
+
+    input:focus {
+      outline: none;
+      border: none;
+    }
+
+    .container-main {
+      display: flex;
+    }
+
+    aside {
+      display: flex;
+      position: sticky;
+      top: 5px;
+      flex-direction: column;
+      gap: 1.5em;
+      width: 15vmax;
+      height: 100vh;
+      padding: 1em;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      background-color: #ffff;
+      border-radius: 30px;
+      padding: 1em;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+    }
+
+    .profile p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .profile img {
+      width: 40%;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+
+    .category {
+      height: 100%;
+      background-color: #ffff;
+      border-radius: 30px;
+      padding: 1em;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+    }
+
+    .category ul {
+      list-style: none;
+    }
+
+    .category li {
+      margin-bottom: 1em;
+      font-weight: 300;
+    }
+
+    .category h3 {
+      margin-top: 0.5em;
+      margin-bottom: 2em;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      font-family: "Poppins";
+      margin-top: 2em;
+      width: 75vmax;
+      margin-left: 2em;
+    }
+
+    main h3 {
+      margin-bottom: 0.5em;
+      font-size: 24px;
+    }
+
+    main p {
+      font-size: 16px;
+    }
+
+    main img {
+      width: 600px;
+      border-radius: 20px;
+      margin-bottom: 0.5em;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+    }
+
+    .container-identity {
+      margin-bottom: 1em;
+    }
+
+    .container-identity p {
+      font-size: 12px;
+    }
+
+    .main-article {
+      margin-bottom: 1em;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      color: #ffff;
+      height: 3em;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>News Portal</h1>
+      <ul>
+        <a href="/index.html">
+          <li>Home</li>
+        </a>
+        <a href="#">
+          <li>About</li>
+        </a>
+        <a href="#">
+          <li>Contact</li>
+        </a>
+      </ul>
+      <div class="container-input">
+        <input type="text" />
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+    </header>
+    <div class="container-main">
+      <aside>
+        <div class="profile">
+          <img src="/Assets/Image/Pp1.jpeg" alt="p-profile" />
+          <p>Kelompok 2</p>
+        </div>
+        <div class="category">
+          <h3>Category</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-landmark"></i> Politics</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-globe"></i> International</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-chart-line"></i> Economy</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <main>
+        <h3>Latest</h3>
+        <img src="/Assets/Image/Thumbnail/Prabowo.jpg" />
+        <h1>
+          Pengamat Sarankan Prabowo Bentuk Kementerian Perkotaan, Perdesaan, dan
+          Perumahan
+        </h1>
+        <div class="container-identity">
+          <p>By : <span>Aisha Shaidra</span></p>
+          <p>Rabu, 9 Oktober 2024 18:29 WIB</p>
+        </div>
+        <div class="main-article">
+          <p>
+            Pengamat tata kota Universitas Trisakti, Nirwono Joga, menanggapi
+            rencana presiden terpilih Prabowo Subianto membentuk Kementerian
+            Perumahan. Menurutnya, Kementerian Perumahan akan lebih baik
+            dikembangkan menjadi Kementerian Perkotaan, Perdesaan, dan
+            Perumahan.
+          </p>
+          <br />
+          <p>
+            “Ini untuk mensinkronkan rencana pembangunan tiga juta rumah per
+            tahun, di mana satu juta di perkotaan dan dua juta di perdesaan,”
+            kata Nirwono kepada Tempo, Selasa malam, 8 Oktober 2024.
+            Pengembangan ini menurutnya akan lebih efektif dan efisien. Prabowo
+            dikabarkan akan memecah Kementerian Pekerjaan Umum dan Perumahan
+            Rakyat (PUPR) menjadi dua kementerian yang menangani pembangunan
+            infrastruktur dan perumahan rakyat. Adik Prabowo, Hashim
+            Djojohadikusumo, mengatakan rencana pemisahan itu menjadi wujud
+            komitmen kakaknya dalam mengembangkan perumahan di Indonesia.
+          </p>
+          <br />
+          <p>
+            Beranda Bisnis Pengamat Sarankan Prabowo Bentuk Kementerian
+            Perkotaan, Perdesaan, dan Perumahan Reporter Riri Rahayu Editor
+            Aisha Shaidra Rabu, 9 Oktober 2024 18:29 WIB image-gnews Bagikan
+            image social image social image social image social Presiden Joko
+            Widodo bersama Menhan yang juga Presiden Terpilih Prabowo Subianto
+            tiba dilokasi acara Peringatan Hari Kesaktian Pancasila di Monumen
+            Pancasila Sakti, Lubang Buaya, Jakarta, Selasa 1 Oktober 2024.
+            TEMPO/Subekti. Presiden Joko Widodo bersama Menhan yang juga
+            Presiden Terpilih Prabowo Subianto tiba dilokasi acara Peringatan
+            Hari Kesaktian Pancasila di Monumen Pancasila Sakti, Lubang Buaya,
+            Jakarta, Selasa 1 Oktober 2024. TEMPO/Subekti. Iklan TEMPO.CO,
+            Jakarta - Pengamat tata kota Universitas Trisakti, Nirwono Joga,
+            menanggapi rencana presiden terpilih Prabowo Subianto membentuk
+            Kementerian Perumahan. Menurutnya, Kementerian Perumahan akan lebih
+            baik dikembangkan menjadi Kementerian Perkotaan, Perdesaan, dan
+            Perumahan. “Ini untuk mensinkronkan rencana pembangunan tiga juta
+            rumah per tahun, di mana satu juta di perkotaan dan dua juta di
+            perdesaan,” kata Nirwono kepada Tempo, Selasa malam, 8 Oktober 2024.
+            Pengembangan ini menurutnya akan lebih efektif dan efisien. Prabowo
+            dikabarkan akan memecah Kementerian Pekerjaan Umum dan Perumahan
+            Rakyat (PUPR) menjadi dua kementerian yang menangani pembangunan
+            infrastruktur dan perumahan rakyat. Adik Prabowo, Hashim
+            Djojohadikusumo, mengatakan rencana pemisahan itu menjadi wujud
+            komitmen kakaknya dalam mengembangkan perumahan di Indonesia.
+            Seiring perubahan struktur kementerian ini, Prabowo juga
+            disebut-sebut akan membentuk Kementerian Koordinator (Kemenko)
+            Bidang Infrastruktur. Namun, menurut Nirwono, pembentukan Kemenko
+            Infrastruktur bukan perkara mendesa. Ia justru khawatir Kemenko baru
+            ini justru memperpanjang birokrasi dan rantai koordinasi. “Lebih
+            baik pemerintah mempertahankan Kementerian PUPR yang sudah ada dan
+            tinggal memperkuat dukungan, baik pembiayaan maupun kewenangan agar
+            bisa bekerja lebih efektif dan efisien,” ungkap Nirwono.
+          </p>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <p>
+        &copy; News Portal - 2024 All rights reserved. Disclaimers | Terms |
+        Privacy
+      </p>
+    </footer>
+  </body>
+</html>
