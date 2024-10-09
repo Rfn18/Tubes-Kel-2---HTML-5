@@ -63,7 +63,7 @@ aside {
   top: 5px;
   flex-direction: column;
   gap: 1.5em;
-  width: 30vmax;
+  width: 20vmax;
   height: 100vh;
   padding: 1em;
 }
@@ -126,69 +126,40 @@ a {
 }
 
 main {
-  display: flex;
-  justify-content: center;
+  width: 100vmax;
+  margin-left: 2em;
   margin-top: 2em;
 }
 
-.container-latest {
+main h3 {
+  margin-bottom: 2em;
+}
+
+.container-card {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+main img {
+  width: 200px;
+}
+
+.main-content {
   display: flex;
-  flex-direction: column;
-  gap: 2em;
+  gap: 1em;
+  border-left: 0.5px solid #ccc;
   padding: 2em;
-  flex: 1;
 }
 
-.container-latest h3 {
-  border-bottom: 1px solid #160303;
-  font-size: 18px;
-}
-.container-latest ul {
-  list-style: none;
-  font-size: 16px;
+main h4 {
+  font-weight: 400;
 }
 
-.container-latest li {
-  margin-bottom: 1em;
-  border-bottom: 1px solid #160303;
-  padding-bottom: 1em;
-  transition: 0.3s ease;
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-}
-
-.container-latest li:hover {
-  color: blueviolet;
-  cursor: pointer;
-}
-
-.container-latest h4 {
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.container-latest p {
+main p {
   font-size: 10px;
-  margin-top: 0.5em;
 }
 
-.container-trending {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2em;
-  flex: 4;
-}
-
-.container-trending h3 {
-  border-bottom: 1px solid #160303;
-  font-size: 18px;
-}
-
-.container-trending h1 {
-  font-size: 30px;
-  margin-top: 0.5em;
+main a {
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
@@ -196,19 +167,8 @@ main {
   -o-transition: 0.3s ease;
 }
 
-.container-trending h1:hover {
+main a:hover {
   color: blueviolet;
-  cursor: pointer;
-}
-
-.container-trending p {
-  font-size: 14px;
-  margin-top: 0.5em;
-}
-
-.container-trending img {
-  width: 60%;
-  margin-top: 1em;
 }
 
 footer {
